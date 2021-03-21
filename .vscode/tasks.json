@@ -30,8 +30,9 @@
         {
             "label": "Compile current file",
             "type": "shell",
-            "command": "/usr/local/bin/arm-none-eabi-gcc",
+            "command": "/usr/local/bin/arm-none-eabi-g++",
             "args": [
+                "--specs=nosys.specs",
                 "-c",
                 "-DUSE_HAL_DRIVER",
                 "-DSTM32F401xE",

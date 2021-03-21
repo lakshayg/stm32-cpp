@@ -88,7 +88,8 @@
         "-lm",
         "-lnosys",
         "-Wl,-Map=build/stm-project.map,--cref",
-        "-Wl,--gc-sections"
+        "-Wl,--gc-sections",
+        "--specs=nosys.specs"
     ],
     "buildDir": "build",
     "targetExecutablePath": "build/stm-project.elf",
@@ -98,7 +99,7 @@
     ],
     "stm32SvdPath": ".vscode/STM32F401.svd",
     "ABOUT4": "---- Paths below are fetched from user-specific 'toolsPaths.json'. ----",
-    "gccExePath": "/usr/local/bin/arm-none-eabi-gcc",
+    "gccExePath": "/usr/local/bin/arm-none-eabi-g++",
     "gccInludePath": "/usr/local/lib/gcc/arm-none-eabi/10.2.1/include",
     "buildToolsPath": "/usr/bin/make",
     "pythonExec": "python3",
