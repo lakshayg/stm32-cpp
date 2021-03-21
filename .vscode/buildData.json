@@ -5,7 +5,7 @@
     "VERSION": "1.7",
     "LAST_RUN": "2021-03-20 23:48:40.456569",
     "cSources": [
-        "Core/Src/main.c",
+        "Core/Src/main.cpp",
         "Core/Src/stm32f4xx_it.c",
         "Core/Src/stm32f4xx_hal_msp.c",
         "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c",
