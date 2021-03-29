@@ -22,8 +22,8 @@ class UpdatePaths():
         # keys must match with 'self.bStr.toolsPaths' list
         self.pathsDescriptionsData = {
             self.bStr.gccExePath: {
-                "name": "arm-none-eabi-gcc executable (arm-none-eabi-gcc.exe)",
-                "defaultPath": "arm-none-eabi-gcc"},
+                "name": "arm-none-eabi-gcc executable (arm-none-eabi-g++.exe)",
+                "defaultPath": "arm-none-eabi-g++"},
             self.bStr.buildToolsPath: {
                 "name": "make executable (make.exe)",
                 "defaultPath": "make"},

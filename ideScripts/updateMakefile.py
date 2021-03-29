@@ -22,6 +22,7 @@ class MakefileStrings():
     buildDir = 'BUILD_DIR'
 
     cSources = 'C_SOURCES'
+    cppSources = 'CPP_SOURCES'
     asmSources = 'ASM_SOURCES'
     ldSources = 'LIBS'
     cDefines = 'C_DEFS'
@@ -116,6 +117,9 @@ class Makefile():
         # source files
         cSourcesList = self.getMakefileVariable(makeExePath, gccExePath, self.mkfStr.cSources)
         dataDictionaryList[self.mkfStr.cSources] = cSourcesList
+
+        cppSourcesList = self.getMakefileVariable(makeExePath, gccExePath, self.mkfStr.cppSources)
+        dataDictionaryList[self.mkfStr.cppSources] = cppSourcesList
 
         asmSourcesList = self.getMakefileVariable(makeExePath, gccExePath, self.mkfStr.asmSources)
         dataDictionaryList[self.mkfStr.asmSources] = asmSourcesList
@@ -212,6 +216,9 @@ class Makefile():
         # sources
         cSources = cP.getCPropertiesKeyData(cPropertiesData, self.cPStr.user_cSources)
         data = self.searchAndAppend(data, self.mkfStr.cSources, cSources)
+
+        cppSources = cP.getCPropertiesKeyData(cPropertiesData, self.cPStr.user_cppSources)
+        data = self.searchAndAppend(data, self.mkfStr.cppSources, cppSources)
 
         asmSources = cP.getCPropertiesKeyData(cPropertiesData, self.cPStr.user_asmSources)
         data = self.searchAndAppend(data, self.mkfStr.asmSources, asmSources)

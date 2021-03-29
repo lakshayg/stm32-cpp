@@ -29,6 +29,7 @@ c_cpp_template = """{
     "env" : {
         "____________________USER_FIELDS_CAN_BE_MODIFIED____________________": "",
         "user_cSources": [],
+        "user_cppSources": [],
         "user_asmSources": [],
         "user_ldSources": [],
         "user_cIncludes": [],
@@ -152,6 +153,7 @@ buildDataTemplate = """{
     "VERSION": "",
     "LAST_RUN": "",
     "cSources": [],
+    "cppSources": [],
     "asmSources": [],
     "ldSources": [],
     "cIncludes": [],
