@@ -20,6 +20,7 @@ __version__ = utils.__version__
 class BuildDataStrings():
     # project sources, includes, defines, ....
     cSources = 'cSources'
+    cppSources = 'cppSources'
     asmSources = 'asmSources'
     ldSources = 'ldSources'
 
@@ -267,6 +268,9 @@ class BuildData():
         # sources
         cSources = makefileData[self.mkfStr.cSources]
         buildData[self.bStr.cSources] = cSources
+
+        cppSources = makefileData[self.mkfStr.cppSources]
+        buildData[self.bStr.cppSources] = cppSources
 
         asmSources = makefileData[self.mkfStr.asmSources]
         buildData[self.bStr.ldSources] = asmSources

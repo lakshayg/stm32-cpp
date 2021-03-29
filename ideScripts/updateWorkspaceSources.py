@@ -20,6 +20,7 @@ __version__ = utils.__version__
 
 class CPropertiesStrings():
     user_cSources = 'user_cSources'
+    user_cppSources = 'user_cppSources'
     user_asmSources = 'user_asmSources'
     user_ldSources = 'user_ldSources'
 
@@ -132,6 +133,7 @@ class CProperties():
         '''
         # source files
         sourceFiles = makefileData[self.mkfStr.cSources]
+        sourceFiles += makefileData[self.mkfStr.cppSources]
         sourceFiles += makefileData[self.mkfStr.asmSources]
         cPropertiesData["env"][self.cPStr.cubemx_sourceFiles] = sourceFiles
 
